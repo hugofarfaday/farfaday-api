@@ -1,0 +1,30 @@
+{
+    "db": {
+        "host": "localhost",
+        "port": "3306",
+        "dbName": "shop",
+        "user": "root",
+        "pass": ""
+    },
+    "hash": {
+        "prefix": "$argon2id$v=19$m=1024,t=2,p=2$"
+    },
+    "jwt" : {
+        "secret": "hAgBizEu5Z6q134J"
+    },
+    "restricted" : {
+        "GET/client": "$userRole == 1;",
+        "GET/client/:id": "$userRole == 1 || $userId == $id;",
+        "GET/comment": "$userRole > 0;"
+    },
+    "mailer" : {
+        "main": {
+            "host": "stmp.gmail.com",
+            "port": 587,
+            "auth": true,
+            "secure": "tls",
+            "user": "ugolescargot0601@gmail.com",
+            "pass": "zrxzuyibehuhyjnu"
+        }
+    }
+}

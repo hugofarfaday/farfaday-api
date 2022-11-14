@@ -1,0 +1,13 @@
+{
+    "name": "bedul/blog-api",
+    "authors": [
+        {
+            "name": "laurentbedu",
+            "email": "bedulaurent@gmail.com"
+        }
+    ],
+    "require": {
+        "firebase/php-jwt": "^6.3",
+        "phpmailer/phpmailer": "^6.6"
+    }
+}
